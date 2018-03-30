@@ -1,0 +1,21 @@
+<HTML>
+<HEAD><TITLE>Books</TITLE></HEAD>
+<BODY><H2>All the books in the bookstore!</H2><br/>
+<TABLE cellpadding="10">
+    <TH>Name</TH>
+    <TH>Price</TH>
+    <TH>More Info</TH>
+    </TR>
+
+    <% for(var i = 0; i < books.length;i++) { %>
+    <TR>
+        <TD><%= books[i].name %></TD>
+        <TD><%= books[i].price %></TD>
+        <TD><a href=<%= books[i].url %>>Get Info</a>
+    </TR>
+    <% } %>
+
+</TABLE>
+</BODY>
+I want to <a href="http://localhost:8080/login.html">purchase something</a>!
+</HTML>

@@ -1,0 +1,46 @@
+<html>
+<head>
+    <title>Cluedo</title>
+    <script src="Cluedo.js" type="text/javascript"></script>
+</head>
+<body>
+
+<p id="mainList">
+    <script>display()</script>
+</p>
+
+
+<FORM id="nameSpace">
+    Name:
+    <input type="text" name="userName" />
+    <input id="userNameButton" type="button" value="Enter"/>
+</FORM>
+<script>
+    document.getElementById("userNameButton").addEventListener("click", userNameMessage);
+    document.getElementById("userNameButton").addEventListener("click", selectAndDistribute);
+</script>
+
+
+<p id="playerHand">
+
+</p>
+
+<FORM id="guessForm">
+
+</FORM>
+
+<p id="winMessage"></p>
+
+<br/>
+<br/>
+
+<p id="showHistory"></p>
+<button id="historyButton" onclick="history()">Show History</button>
+
+<br/>
+
+<p id="recordHistory"></p>
+<button id="recordButton" onclick="showRecord()">Show Record</button>
+
+</body>
+</html>

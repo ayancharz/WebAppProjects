@@ -1,0 +1,67 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+    <title>Bookstore: Manage page</title>
+</head>
+<body>
+<h1>Bookstore: Manage page</h1>
+<br/>
+<form action="adminManage" method="post">
+    <table width="75%">
+        <tbody>
+        <tr>
+            <td width="48%">Enter Book name to add</td>
+            <td width="52%">
+                <input name="bookName" type="text" ><%= bookNameError %>
+            </td>
+        </tr>
+        <tr>
+            <td width="48%">Enter book price</td>
+            <td width="80%">
+                <input name="bookPrice" type="text"><%= bookPriceError %>
+            </td>
+        </tr>
+        <tr>
+            <td width="48%">Enter book url</td>
+            <td width="80%">
+                <input name="bookUrl" type="text">
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <p>
+        <input name="Submit" value="Add" type="submit">
+        <input name="Reset" value="Reset form" type="reset">
+    </p>
+
+
+    <table width="75%">
+        <tbody>
+        <tr>
+            <td>Books</td>
+            <td>
+                <select size="9" name="Books" multiple="multiple">
+
+                    <% for(var i = 0; i<books.length;i++) { %>
+                    <option value=<%= books[i].id%>><%= books[i].name%></option>
+                    <% } %>
+
+
+                </select>
+            </td>
+            <td><%= bookError %></td>
+        </tr>
+        </tbody>
+    </table>
+    <p>
+        <input name="Submit" value="Delete" type="submit">
+    </p>
+
+    <p>
+        <%= status %>
+    </p>
+
+    <p><a href="/logout">LOGOUT</a></p>
+</form>
+</body>
+</html>

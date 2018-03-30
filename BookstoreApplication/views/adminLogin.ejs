@@ -1,0 +1,33 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+    <title>Bookstore: Admin Login page</title>
+</head>
+<body>
+<h1>Bookstore: Admin Login page</h1>
+<h3><%= error %></h3>
+<br/>
+<form action="adminLogin" method="post">
+    <table width="75%">
+        <tbody>
+        <tr>
+            <td width="48%">Enter your name</td>
+            <td width="52%">
+                <input name="name" type="text" ><%= nameError %>
+            </td>
+        </tr>
+        <tr>
+            <td width="48%">Enter your password</td>
+            <td width="80%">
+                <input name="pwd" type="text"><%= password %>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <p>
+        <input name="Submit" value="Login" type="submit">
+        <input name="Reset" value="Reset form" type="reset">
+    </p>
+</form>
+</body>
+</html>

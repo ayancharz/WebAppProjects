@@ -1,0 +1,45 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+
+
+<html>
+<head>
+    <title>confirm</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <meta name="GENERATOR" content="Rational Software Architect">
+</head>
+<body>
+
+<p>Purchase Successful</p>
+
+<table border="0">
+    <tbody>
+    <tr>
+        <td>Customer:</td>
+        <td><%= name %></td>
+    </tr>
+    <tr>
+        <td><span>Card:</span></td>
+        <td><%=cardType%></td>
+    </tr>
+    <tr>
+        <td>Card number:</td>
+        <td><%= cardNumber %></td>
+    </tr>
+    <tr>
+        <td>Amount:</td>
+        <td><%= totalcost %></td>
+    </tr>
+    <tr>
+        <td>Express Delivery:</td>
+        <td>
+            <%= yesOrNo  %>
+        </td>
+    </tr>
+    </tbody>
+</table>
+<br/><a href="/list">BUY MORE BOOKS</a>
+<br/><a href="/logout">LOGOUT</a>
+</body>
+</html>
